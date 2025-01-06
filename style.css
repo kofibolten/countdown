@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.container .image-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.logo img{
+    width: 300px;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.content {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+    padding-left: 100px;
+}
+
+.content h1 {
+    font-size: 60px;
+}
+
+.content p {
+    font-size: 25px;
+}
+
+.launch-time {
+    display: flex;
+}
+
+.launch-time div {
+    flex-basis: 150px;
+}
+
+.launch-time div p {
+    font-size: 80px;
+    margin-top: 20px;
+}
+
+.launch-time div span {
+    padding-top: -20px;
+}
+
+.socials {
+    top: 80%;
+    left: 80%;
+    position: absolute;
+    transform: translateY(-20%);
+}
+
+.socials p {
+    color: #fff;
+    font-size: 25px;
+}
+
+.socials div i {
+    color: #fff;
+    font-size: 30px;
+}
+
+.socials .icons {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.socials .icons :hover {
+    color: rgb(5, 132, 146);
+    transition: 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .logo img{
+        width: 200px;
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+
+    .content {
+        top: 50%;
+        position: absolute;
+        transform: translateY(-50%);
+        color: #ffffff;
+        padding: 15px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .content p {
+        font-size: 25px;
+    }
+
+    .launch-time div p {
+        font-size: 50px;
+        margin-top: 20px;
+    }
+
+    .socials {
+        top: 80%;
+        left: 50%;
+        position: absolute;
+        transform: translateY(-20%);
+    }
+
+    .socials p {
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .socials .icons {
+        display: flex;
+        justify-content: space-between;
+        width: 150px;
+    }
+
+    .socials div i {
+        color: #fff;
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .socials {
+        top: 80%;
+        left: 70%;
+        position: absolute;
+        transform: translateY(-20%);
+    }
+}
